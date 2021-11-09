@@ -1,1 +1,3 @@
-# Proftpd's configuration with examples for SSL and access with PostgreSQL.
+# Proftpd's configuration 
+
+Examples for SSL and access with PostgreSQL.
