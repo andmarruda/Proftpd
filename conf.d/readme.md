@@ -9,7 +9,7 @@ Let's create the server's keys.
   5.a)/etc/proftpd/auth_key/host_rsa_key
   5.b)confirm the questions and it will be generated
 6) Now let's generated the DSA Key
-7) sudo ssh-keygen -t dsa -b 4096
+7) sudo ssh-keygen -t dsa
 8) Enter file in which to save the key (/home/usr/.ssh/id_dsa):
   8.a)/etc/proftpd/auth_key/host_dsa_key
   8.b)confirm the questions and it will be generated
@@ -37,7 +37,7 @@ Vamos criar as chaves para o servidor.
   5.a)/etc/proftpd/auth_key/host_rsa_key
   5.b)Confirme os questionamentos e a chave será gerada
 6) Agora vamos gerar a chave DSA
-7) sudo ssh-keygen -t dsa -b 4096
+7) sudo ssh-keygen -t dsa
 8) Enter file in which to save the key (/home/usr/.ssh/id_dsa):
   8.a)/etc/proftpd/auth_key/host_dsa_key
   8.b)Confirme os questionamentos e a chave será gerada
