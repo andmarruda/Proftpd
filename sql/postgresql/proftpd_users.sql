@@ -6,7 +6,7 @@ CREATE TABLE proftpd_users(
 	gid varchar(5) not null,
 	homedir text not null,
 	shell varchar(20) not null default '/bin/false',
-	pub_key text not null
+	pub_key character varying(8192) not null
 ) with(
 oids=false
 );
