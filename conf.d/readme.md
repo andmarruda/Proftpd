@@ -16,6 +16,15 @@ Let's create the server's keys.
 13) Change the owner and authorization of the directory that you created in the previous step
 14) sudo chown proftpd /etc/proftpd/auth_key -R
 15) sudo chmod 700 /etc/proftpd/auth_key -R
+16) Disabling SFTP access from SSH
+17) Run the command bellow
+18) sudo nano /etc/ssh/sshd_config
+19) Will open the text editor nano search for the line as follow:
+20) Subsystem sftp /usr/lib/openssh/sftp-server
+21) Comment it using # before the line like follow
+22) #Subsystem sftp /usr/lib/openssh/sftp-server
+23) Restart the ssh with the follow command:
+24) sudo systemctl restart ssh
   
 After this just run the follow command:
 sudo systemctl restart proftpd
@@ -44,6 +53,15 @@ Vamos criar as chaves para o servidor.
 13) Mude o proprietário e as autorizações do diretório que você criou no passo anterior.
 14) sudo chown proftpd /etc/proftpd/auth_key -R
 15) sudo chmod 700 /etc/proftpd/auth_key -R
+16) Desabilitando o acesso SFTP pelo SSH
+17) Execute o comando abaixo:
+18) sudo nano /etc/ssh/sshd_config
+19) Abrirá o editor de texto nano com as configurações procure por:
+20) Subsystem sftp /usr/lib/openssh/sftp-server
+21) Comente a linha usando # antes de qualquer outro caracter da linha como abaixo:
+22) #Subsystem sftp /usr/lib/openssh/sftp-server
+23) Reinicie o servidor ssh usando o comando abaixo:
+24) sudo systemctl restart ssh
   
 Depois disso rode o comando a seguir:
 sudo systemctl restart proftpd
